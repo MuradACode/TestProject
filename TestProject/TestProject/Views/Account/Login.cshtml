@@ -1,0 +1,32 @@
+﻿@model LoginVM
+
+<section class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="post">
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control">
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label"></label>
+                    <input asp-for="Password" class="form-control">
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="IsPersistent" class="form-label">Remeber me</label>
+                    <input asp-for="IsPersistent" type="checkbox" class="form-control">
+                    <span class="text-danger" asp-validation-for="IsPersistent"></span>
+                </div>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Identity{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
+}

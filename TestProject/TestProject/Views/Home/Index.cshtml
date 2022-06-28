@@ -1,0 +1,16 @@
+﻿@model HomeVM
+
+@foreach (Card card in Model.Cards)
+{
+    <div class="card mb-3">
+        <img src="~/assets/uploads/images/@card.ImageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@card.Title</h5>
+            <p class="card-text">
+                @card.Description
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <a class="btn btn-primary" href="">Modal</a>
+        </div>
+    </div>
+}

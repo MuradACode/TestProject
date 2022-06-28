@@ -1,0 +1,32 @@
+﻿@model List<Card>
+
+<section class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr class="d-flex justify-content-around">
+                        <a class="btn btn-success" asp-area="Admin" asp-controller="Card" asp-action="Create">Create</a>
+                    </tr>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Card card in Model)
+                    {
+                        <tr>
+                            <td>@card.Title</td>
+                            <td>
+                                <a class="btn btn-primary" asp-area="Admin" asp-controller="Card" asp-action="Details" asp-route-id="@card.Id">Details</a>
+                                <a class="btn btn-warning" asp-area="Admin" asp-controller="Card" asp-action="Update" asp-route-id="@card.Id">Update</a>
+                                <a class="btn btn-danger" asp-area="Admin" asp-controller="Card" asp-action="Delete" asp-route-id="@card.Id">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

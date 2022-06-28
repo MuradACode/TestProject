@@ -1,0 +1,13 @@
+C:\Users\murad\source\repos\TestProject\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\murad\source\repos\TestProject\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+C:\Users\murad\source\repos\TestProject\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+C:\Users\murad\source\repos\TestProject\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\murad\source\repos\TestProject\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\murad\source\repos\TestProject\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache

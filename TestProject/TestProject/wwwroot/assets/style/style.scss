@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBar {
+    width: 100vw;
+    z-index: 5;
+    position: fixed;
+    background-color: transparent;
+    transition: .4s;
+}

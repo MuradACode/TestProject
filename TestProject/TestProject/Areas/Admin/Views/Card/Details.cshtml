@@ -1,0 +1,33 @@
+﻿@model Card
+
+<section class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <a class="btn btn-primary float-left" asp-area="Admin" asp-controller="Card" asp-action="Index">Go Back</a>
+                        <a class="btn btn-success float-right" asp-area="Admin" asp-controller="Card" asp-action="Create">Create</a>
+                    </tr>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Settings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Model.Title</td>
+                        <td>@Model.Description</td>
+                        <td><img src="~/assets/uploads/images/@Model.ImageUrl" alt="Card image" /></td>
+                        <td>
+                            <a class="btn btn-warning" asp-area="Admin" asp-controller="Card" asp-action="Update" asp-route-id="@Model.Id">Update</a>
+                            <a class="btn btn-danger" asp-area="Admin" asp-controller="Card" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

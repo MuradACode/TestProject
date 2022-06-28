@@ -1,0 +1,28 @@
+﻿@model Card
+
+<section class="container">
+    <div class="row">
+        <div class="col-12">
+            <form method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="cardTitle" class="form-label">Title</label>
+                    <input name="cardTitle" value="@Model.Title" id="cardTitle" class="form-control">
+                    <span class="text-danger" asp-validation-for="Title"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="cardDescription" class="form-label">Description</label>
+                    <input name="cardDescription" value="@Model.Description" id="cardDescription" class="form-control">
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="cardImageFile" class="form-label">Image</label>
+                    <input name="cardImageFile" type="file" accept="image/*" id="cardImageFile" class="form-control">
+                    <span class="text-danger" asp-validation-for="ImageFile"></span>
+                </div>
+                <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                <button type="submit" class="btn btn-primary mt-3 me-3">Submit</button>
+                <a asp-area="Admin" asp-controller="Card" asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
+            </form>
+        </div>
+    </div>
+</section>
